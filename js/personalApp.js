@@ -35,9 +35,6 @@ app.directive('randomBackgroundImage', function ($http) {
 // Bio directive
 app.directive('bio', function() {
   return {
-    templateUrl: 'templates/bio.html',
-    link: function(scope, element) {
-    	element.addCLass('module');
-    }
+    templateUrl: 'templates/bio.html'
   };
 });
