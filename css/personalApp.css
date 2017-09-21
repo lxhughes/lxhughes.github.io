@@ -1,0 +1,46 @@
+body { 
+	margin: 0; 
+	padding: 0; 
+	background-color: #000033;
+	font-family: 'Raleway', 'sans-serif';
+	color: #FFF;
+}
+a:link {
+    color: #DDD;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #DDF;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #DDF;
+    text-decoration: none;
+}
+h1.maintitle{
+	font-size: 5em;
+	color: #FFF;
+	position: absolute;
+  	bottom: 0;
+  	left: 0;
+  	margin: 0;
+}
+div.maintitle{
+	position: relative;
+	height: 660px;
+	width: 100%;
+}
+div.module{
+	background-color: #FFF;
+	color: #000;
+}
+.photocredit {
+	position: absolute;
+	bottom: 100%;
+	left: 100%;
+	-webkit-transform: rotateZ(90deg);
+	transform-origin: 0 100%;
+	white-space: nowrap;
+}

@@ -1,7 +1,22 @@
 <!DOCTYPE html>
 <html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<script src="js/personalApp.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/personalApp.css"></link>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+<div ng-app="personalApp" ng-controller="myCtrl">
+
+	<div random-background-image class='maintitle'>
+		<h1 class='maintitle'>L. X. Hughes</h1>
+	</div>
+	
+	<bio class='module'></bio>
+    
+</div>
+
 </body>
 </html>
