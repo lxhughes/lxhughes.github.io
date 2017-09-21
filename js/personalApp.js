@@ -14,27 +14,26 @@ app.directive('randomBackgroundImage', function ($http) {
     	.then(function(response) {
     	    scope.imgurl = response.data.urls.full;
     	    scope.imgcredit = response.data.user.username;
-    	    scope.imgcreditlink = response.data.user.portfolio_url;
-    	    
-    	    element.css({
+    		scope.setImg();
+ 	       
+    	}, function(){
+			scope.imgurl = '/images/osman-rana-343255.jpg';
+			scope.imgcredit = 'osmanrana';
+			scope.setImg();
+	   }); 
+	   
+	   scope.setImg = function(){
+	   		element.css({
  	           'background-image': 'url(' + scope.imgurl + ')',
  	           'background-repeat': 'no-repeat',
 		       'background-position': 'center center',
        			'-webkit-background-size': 'cover',
        			'background-size': 'cover'
- 	       });
+ 	       })
  	       
- 	        var pcred = angular.element("<div class='photocredit'>Photo by <a href='"+scope.imgcreditlink+"'>"+scope.imgcredit+"</a> via <a href='https://www.unsplash.com'>Unsplash</a></div>");
+ 	        var pcred = angular.element("<div class='photocredit'>Photo by <a href='https://www.unsplash.com/@"+scope.imgcredit+"'>"+scope.imgcredit+"</a> via <a href='https://www.unsplash.com'>Unsplash</a></div>");
 			element.append(pcred);
- 	       
-    	});    
+		}
         
     };
-});
-
-// Bio directive
-app.directive('bio', function() {
-  return {
-    templateUrl: 'templates/bio.html'
-  };
 });

@@ -2,8 +2,11 @@ body {
 	margin: 0; 
 	padding: 0; 
 	background-color: #000033;
-	font-family: 'Raleway', 'sans-serif';
+	font-family: 'Merriweather', 'serif';
 	color: #FFF;
+}
+h1, h2{
+	font-family: 'Raleway', 'sans-serif';
 }
 a:link {
     color: #DDD;
@@ -20,7 +23,7 @@ a:hover {
     text-decoration: none;
 }
 h1.maintitle{
-	font-size: 5em;
+	font-size: 6em;
 	color: #FFF;
 	position: absolute;
   	bottom: 0;
@@ -39,8 +42,8 @@ div.maintitle{
 	overflow: hidden;
 }
 .textblock {
-	width: 800px;
-	line-height: 1.2;
+	max-width: 800px;
+	line-height: 1.6em;
 	margin-right: 1em;
 	margin-top: 1em;
 	margin-bottom: 1em;
@@ -49,7 +52,7 @@ div.maintitle{
 .photocredit {
 	position: absolute;
 	bottom: 100%;
-	left: 100%;
+	left: 98%;
 	-webkit-transform: rotateZ(90deg);
 	transform-origin: 0 100%;
 	white-space: nowrap;
