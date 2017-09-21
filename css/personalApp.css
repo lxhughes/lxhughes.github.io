@@ -4,6 +4,7 @@ body {
 	background-color: #000033;
 	font-family: 'Raleway', 'sans-serif';
 	color: #FFF;
+	line-height: 1.1;
 }
 a:link {
     color: #DDD;
@@ -35,6 +36,7 @@ div.maintitle{
 div.module{
 	background-color: #FFF;
 	color: #000;
+	width: 100%;
 }
 .photocredit {
 	position: absolute;
